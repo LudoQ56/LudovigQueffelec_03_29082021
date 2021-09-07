@@ -1,0 +1,10 @@
+.header_position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.6rem;
+}
+/*# sourceMappingURL=layout.css.map */
