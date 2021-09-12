@@ -1,0 +1,7 @@
+@mixin logo {
+    display: flex;
+    width: 43%;
+    object-fit: scale-down;
+    align-content: center;
+    margin: 1.25rem 0rem 0.625rem 0rem;
+}
