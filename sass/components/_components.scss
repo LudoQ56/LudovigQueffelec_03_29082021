@@ -1,0 +1,13 @@
+.button_purple {
+    width: 13.75rem;
+    height: 3.25rem;
+    background: linear-gradient($color_secondary, $color_primary);
+    border-radius: 15rem;
+    color: white;
+    border: none;
+}
+
+.button_centered {
+    align-self: center;
+    justify-self: center;
+}

@@ -1,0 +1,32 @@
+        @import "./maps";
+        @mixin logo {
+            display: flex;
+            width: 43%;
+            object-fit: scale-down;
+            align-content: center;
+            margin: 1.25rem 0rem 0.625rem 0rem;
+        }
+        
+        @mixin flex_center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        @mixin medium_screen {
+            @media screen and (min-width: map-get($map: $breakpoints, $key: medium-screen)) {
+                @content;
+            }
+        }
+        
+        @mixin large_screen {
+            @media screen and(min-width: map-get($breakpoints, large_screen)) {
+                @content;
+            }
+        }
+        
+        @mixin xlarge_screen {
+            @media screen and (min-width: map-get($breakpoints, xlarge_screen)) {
+                @content;
+            }
+        }
