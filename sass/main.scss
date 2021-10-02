@@ -15,6 +15,7 @@ $box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.66);
 @import "./utils/responsive";
 @import "./utils/maps";
 @import "./components/components";
+@import"./components/anims.scss";
 @import "./layouts/layout.scss";
 @import "./pages/template";
 @import "./pages/main";

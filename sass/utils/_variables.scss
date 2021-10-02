@@ -1,3 +1,5 @@
+$color_gradient_1: linear-gradient($color_primary, $color_secondary);
+$color_gradient_2:linear-grandient(#7243ac, #b15697);
 $color_primary:#9356DC;
 $color_secondary:#FF79DA;
 $color_tertiary:#99E2D0;
@@ -6,3 +8,5 @@ $background_color:#eaeaea;
 $background_color_secondary:#f6f6f6;
 $background_footer:#353535;
 $box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.66);
+//variables animation apparition menu
+$animation_duration:2000ms;

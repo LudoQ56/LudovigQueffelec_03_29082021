@@ -9,16 +9,16 @@
         
         //mixins box template
         @mixin box_template {
-            background-color: white;
-            border-radius: 1rem;
             display: flex;
-            margin-bottom: 1.2rem;
-            position: relative;
-            justify-content: space-between;
-            // grid-template-columns: 60% 20% 20%;
-            // grid-template-rows: 1fr 1fr;
+            
+            background: white;
+            border-radius: 0.5rem;
+            height:5rem;
+            
+            margin: 1rem 1rem 1rem 1rem;
+            cursor: pointer;
+            overflow: hidden;
             align-content: center;
-            height: 4.375rem;
         }
         
         //mixins responsive
