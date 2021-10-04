@@ -29,7 +29,7 @@
     width: 100%;
     flex-direction: column;
     z-index: 1;
-    padding-bottom: 3rem;
+    padding-bottom: 6rem;
     &__title {
         font-family: 'Shrikhand', cursive;
         display: inline-flex;
@@ -54,15 +54,18 @@
         @include box_template;
         h5 {
             margin: 0.2rem;
-            font-weight: bold;
+            font-weight: bolder;
+            font-size: 1.01rem;
         }
         &__decript {
+            padding-left: 0.5rem;
             margin-top: 0.5rem;
             flex-grow: 1;
             width: 15rem;
             overflow: clip;
             justify-content: center;
             white-space: nowrap;
+            h5,
             p {
                 overflow: clip;
                 white-space: nowrap;
@@ -80,7 +83,7 @@
             align-items: center;
             width: 0;
             background-color: $color_tertiary;
-            border-radius: 0 0.5rem 0.5rem 0;
+            border-radius: 0 1rem 1rem 0;
             color: white;
             transition: all 1.5s;
             i {
