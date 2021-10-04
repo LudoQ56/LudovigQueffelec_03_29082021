@@ -34,6 +34,12 @@
   justify-self: center;
 }
 
+.anim_heart {
+  position: relative;
+  bottom: 0rem;
+  right: 0.5rem;
+}
+
 body {
   animation: body_fixed 3s;
 }
@@ -218,7 +224,7 @@ body {
 @keyframes menu_opacity4 {
   0% {
     opacity: 0;
-    transform: translateY(-2rem);
+    transform: translateY(2rem);
   }
   100% {
     opacity: 1;
@@ -294,9 +300,10 @@ a {
 }
 
 .main__background {
-  max-width: 100%;
-  height: 60%;
+  width: 100%;
+  height: 15.95rem;
   position: relative;
+  object-fit: cover;
   top: 1rem;
   z-index: -1;
 }
@@ -325,6 +332,9 @@ a {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+}
+.main_temp__title i {
+  margin-top: 0.75rem;
 }
 @media screen and (min-width: 768px) {
   .main_temp__title {
@@ -396,10 +406,6 @@ a {
 .main_temp__box:hover > .main_temp__box__anim i {
   transform: rotate(0deg);
 }
-.main_temp .button_centered {
-  align-self: center;
-  justify-self: center;
-}
 
 .header {
   display: flex;
@@ -436,7 +442,7 @@ a {
 }
 .header h2 {
   width: 60%;
-  font-weight: bold;
+  font-weight: bolder;
   text-align: center;
   margin-top: 2.5rem;
 }
@@ -607,6 +613,8 @@ a {
 
 body {
   font-family: "Roboto", sans-serif;
+  margin-left: 0rem;
+  margin-right: 0rem;
 }
 
 /*# sourceMappingURL=style.css.map */

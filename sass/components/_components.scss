@@ -1,7 +1,6 @@
-$button_height:3.25rem;
 .button_purple {
-    width: 13.75rem;
-    height: 3.25rem;
+    width: $button_width;
+    height: $button_height;
     background-image: $color_gradient_1;
     position: relative;
     top: 1rem;
@@ -35,4 +34,10 @@ $button_height:3.25rem;
 .button_centered {
     align-self: center;
     justify-self: center;
+}
+
+.anim_heart {
+    position: relative;
+    bottom: 0rem;
+    right: 0.5rem;
 }
