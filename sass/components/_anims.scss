@@ -9,7 +9,7 @@ body {
     }
     100% {
         height: auto;
-        overflow: none;
+        overflow: auto;
     }
 }
 
@@ -108,24 +108,6 @@ body {
     to {
         transform: rotate(-359deg);
         transform: rotate(-359deg)
-    }
-}
-
-@keyframes menu {
-    from {
-        transform: scaleY(0);
-    }
-    to {
-        transform: scaleY(1);
-    }
-}
-
-@keyframes charge {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
     }
 }
 
