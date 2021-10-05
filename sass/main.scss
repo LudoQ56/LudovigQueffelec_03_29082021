@@ -1,0 +1,15 @@
+@import "./utils/variables";
+@import "./utils/mixin";
+@import "./utils/responsive";
+@import "./utils/maps";
+@import "./components/components";
+@import"./components/anims.scss";
+@import "./layouts/layout.scss";
+@import "./pages/template";
+@import "./pages/main";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 0rem;
+    margin-right: 0rem;
+}

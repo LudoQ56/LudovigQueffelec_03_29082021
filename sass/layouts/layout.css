@@ -1,0 +1,18 @@
+.header_position {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 1.6rem;
+}
+
+.anim_heart {
+    position: relative;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+
+
+/*# sourceMappingURL=layout.css.map */
