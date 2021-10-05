@@ -1,31 +1,15 @@
-// @import "./sass/utils/variables.scss";
-// @import "./sass/utils/mixin.scss";
-// @import "./sass/base/base.scss";
-// @import "./sass/layouts/layout.scss";
-$color_primary:#9356DC;
-$color_secondary:#FF79DA;
-$color_tertiary:#99E2D0;
-$color-quaternary:#7e7e7e;
-$background_color:#eaeaea;
-$background_color_secondary:#f6f6f6;
-$background_footer:#353535;
-$box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.66);
 @import "./utils/variables";
 @import "./utils/mixin";
 @import "./utils/responsive";
 @import "./utils/maps";
 @import "./components/components";
+@import"./components/anims.scss";
 @import "./layouts/layout.scss";
 @import "./pages/template";
 @import "./pages/main";
-// @mixin small_bloc(bloc) {
-//     width: 90%;
-//     height: 4.7rem;
-//     border: 0rem;
-//     box-shadow: $box-shadow;
-//     display: flex;
-// }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
 body {
     font-family: 'Roboto', sans-serif;
+    margin-left: 0rem;
+    margin-right: 0rem;
 }
