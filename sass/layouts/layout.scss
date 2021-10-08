@@ -16,11 +16,14 @@ a {
     ul {
         list-style: none;
         padding: 0px;
-        filter: invert(1);
+        color: white;
+    }
+    li a {
+        color: white;
     }
     li i {
         margin-right: 0.5rem;
-        filter: invert(1);
+        color: white;
     }
     @include medium-screen {
         justify-content: center;
