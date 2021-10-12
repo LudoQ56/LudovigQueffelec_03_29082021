@@ -355,7 +355,7 @@ a {
 .main_temp__menu_title::before {
   content: "";
   position: absolute;
-  width: 15%;
+  width: 2.5rem;
   top: 1.4rem;
   border-bottom: solid 0.2rem #99E2D0;
 }
@@ -482,7 +482,7 @@ a {
   .header__nav {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 1.3rem;
+    grid-gap: 1.9rem;
     max-width: 100%;
   }
   .header__nav h2 {
@@ -529,7 +529,7 @@ a {
   color: white;
   z-index: 1;
   position: relative;
-  right: 0.55rem;
+  right: 0.95rem;
 }
 .header__nav__small_bloc i {
   margin-left: 0.5rem;
@@ -544,7 +544,7 @@ a {
   padding-top: 1.5rem;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 100%;
   background: #f6f6f6;
   justify-content: center;
   align-items: center;
@@ -589,6 +589,8 @@ a {
 }
 @media screen and (min-width: 480px) {
   .main__liens {
+    margin-left: 0rem;
+    margin-right: 0rem;
     top: 0rem;
     left: 0rem;
   }
