@@ -363,7 +363,7 @@ a {
 .main_temp__menu_title::before {
   content: "";
   position: absolute;
-  width: 15%;
+  width: 2.5rem;
   top: 1.4rem;
   border-bottom: solid 0.2rem #99E2D0;
 }
@@ -614,6 +614,8 @@ a {
 }
 @media screen and (min-width: 480px) {
   .main__liens {
+    margin-left: 0rem;
+    margin-right: 0rem;
     top: 0rem;
     left: 0rem;
   }

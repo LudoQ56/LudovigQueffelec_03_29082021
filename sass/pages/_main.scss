@@ -163,6 +163,9 @@
             z-index: 1;
         }
         @include medium_screen {
+           
+            margin-left: 0rem;
+            margin-right:0rem;
             top: 0rem;
             left: 0rem;
         }

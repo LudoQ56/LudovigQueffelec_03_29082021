@@ -71,7 +71,6 @@ main {
             border-bottom: solid 0.2rem $color_tertiary;
             // margin-bottom: 1.2rem;
         }
-    }
     &__box {
         @include box_template;
         h5 {
