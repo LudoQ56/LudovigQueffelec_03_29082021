@@ -261,13 +261,21 @@ a {
   width: 5.93rem;
   filter: invert(1);
 }
-.footer ul {
-  list-style: none;
-  padding: 0px;
+.footer__link {
+  padding-left: 0px;
+}
+.footer__link ul {
   color: white;
 }
-.footer li a {
+.footer__link li {
+  margin-bottom: 5px;
+  list-style: none;
+}
+.footer__link li a {
   color: white;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .footer li i {
   margin-right: 0.5rem;
@@ -286,7 +294,7 @@ a {
 }
 .header_temp__icon {
   margin-left: 1.5rem;
-  margin-top: 0.4rem;
+  margin-top: 1rem;
 }
 .header_temp__logo {
   margin-left: 15% !important;
@@ -429,7 +437,14 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.header__logo {
+.header__box {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  box-shadow: 0 8px 6px -6px #cfcfcf;
+  z-index: 1;
+}
+.header__box__logo {
   display: flex;
   width: 43%;
   object-fit: scale-down;
@@ -456,12 +471,20 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
-.header__text__intro {
+.header__text__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+.header__text__box__intro {
   text-align: center;
+  margin-top: 1.8rem;
 }
 .header p {
-  width: 80%;
   text-align: center;
 }
 .header .button_purple {
@@ -482,7 +505,7 @@ a {
   .header__nav {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 1.3rem;
+    grid-gap: 1.9rem;
     max-width: 100%;
   }
   .header__nav h2 {
@@ -514,6 +537,7 @@ a {
   border: 0rem;
   box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.27);
   transition: background-color 0.5s ease-in-out;
+  position: relative;
 }
 .header__nav__small_bloc:hover {
   background-color: #e4d5f6;
@@ -528,8 +552,8 @@ a {
   background-color: #9356DC;
   color: white;
   z-index: 1;
-  position: relative;
-  right: 0.55rem;
+  position: absolute;
+  right: 97.5%;
 }
 .header__nav__small_bloc i {
   margin-left: 0.5rem;
@@ -544,13 +568,14 @@ a {
   padding-top: 1.5rem;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 100%;
   background: #f6f6f6;
   justify-content: center;
   align-items: center;
 }
 @media screen and (min-width: 768px) {
   .main {
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 5rem 1fr 1fr;
@@ -632,7 +657,8 @@ a {
   font-size: 1.1rem;
 }
 .main__liens__presentation strong {
-  font-weight: 900;
+  font-weight: 600;
+  letter-spacing: 0.08rem;
 }
 .main__liens__presentation i {
   font-size: 1.2rem;
