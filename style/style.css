@@ -354,20 +354,20 @@ a {
     grid-row: 1/2;
   }
 }
-.main_temp__menu_title {
+.main_temp__title__menu_title {
   margin-left: 1rem;
   justify-content: flex-start;
   font-weight: 400;
   position: relative;
 }
-.main_temp__menu_title::before {
+.main_temp__title__menu_title::before {
   content: "";
   position: absolute;
-  width: 2.5rem;
+  width: 15%;
   top: 1.4rem;
   border-bottom: solid 0.2rem #99E2D0;
 }
-.main_temp__box {
+.main_temp__title__menu_title__box {
   display: flex;
   background: white;
   border-radius: 1rem;
@@ -378,12 +378,12 @@ a {
   align-content: center;
   box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.27);
 }
-.main_temp__box h5 {
+.main_temp__title__menu_title__box h5 {
   margin: 0.2rem;
   font-weight: bold;
   font-size: 1.01rem;
 }
-.main_temp__box__decript {
+.main_temp__title__menu_title__box__decript {
   padding-left: 0.5rem;
   margin-top: 0.2rem;
   flex-grow: 1;
@@ -393,21 +393,21 @@ a {
   justify-content: center;
   white-space: nowrap;
 }
-.main_temp__box__decript h5,
-.main_temp__box__decript p {
+.main_temp__title__menu_title__box__decript h5,
+.main_temp__title__menu_title__box__decript p {
   overflow: clip;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.main_temp__box__decript p {
+.main_temp__title__menu_title__box__decript p {
   margin-top: 0.9rem;
 }
-.main_temp__box__price {
+.main_temp__title__menu_title__box__price {
   width: 4rem;
   padding-top: 2.2rem;
   margin-bottom: 1.9rem;
 }
-.main_temp__box__anim {
+.main_temp__title__menu_title__box__anim {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -417,14 +417,14 @@ a {
   color: white;
   transition: all 1.5s;
 }
-.main_temp__box__anim i {
+.main_temp__title__menu_title__box__anim i {
   transform: rotate(360deg);
   transition: transform 1s ease-in-out;
 }
-.main_temp__box:hover > .main_temp__box__anim {
+.main_temp__title__menu_title__box:hover > .main_temp__title__menu_title__box__anim {
   width: 5em;
 }
-.main_temp__box:hover > .main_temp__box__anim i {
+.main_temp__title__menu_title__box:hover > .main_temp__title__menu_title__box__anim i {
   transform: rotate(0deg);
 }
 

@@ -1,131 +1,132 @@
-.header_temp {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    &__icon {
-        margin-left: 1.5rem;
-        margin-top: 1rem;
-    }
-    &__logo {
-        margin-left: 15% !important;
-        @include medium-screen {
-            margin-left: 25% !important;
-        }
-    }
-}
-
-.main__background {
-    width: 100%;
-    height: 15.95rem;
-    position: relative;
-    object-fit: cover;
-    top: 1rem;
-    z-index: -1;
-    @include medium-screen {
-        display: block;
-        width: 50%;
-        height: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-main {
-    @include large_screen {
-        padding: 2.5rem;
-    }
-}
-
-.main_temp {
-    background-color: $background_color;
-    border-radius: 1.5rem 1.5rem 0rem 0rem;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    z-index: 1;
-    padding-bottom: 6rem;
-    &__title {
-        font-family: 'Shrikhand', cursive;
-        display: inline-flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        i {
-            margin-top: 0.75rem;
-        }
-        @include large_screen {
-            grid-column: 2/3;
-            grid-row: 1/2;
-        }
-    }
-    &__menu_title {
-        margin-left: 1rem;
-        justify-content: flex-start;
-        font-weight: 400;
-        position: relative;
-        &::before {
-            content: "";
-            position: absolute;
-            width: 15%;
-            top: 1.4rem;
-            border-bottom: solid 0.2rem $color_tertiary;
-            // margin-bottom: 1.2rem;
-        }
-    &__box {
-        @include box_template;
-        h5 {
-            margin: 0.2rem;
-            font-weight: bold;
-            font-size: 1.01rem;
-        }
-        &__decript {
-            padding-left: 0.5rem;
-            margin-top: 0.2rem;
-            flex-grow: 1;
-            width: 15rem;
-            line-height: 1rem;
-            overflow: clip;
-            justify-content: center;
-            white-space: nowrap;
-            h5,
-            p {
-                overflow: clip;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
-            p {
-                margin-top: 0.9rem;
-                ;
-            }
-        }
-        &__price {
-            width: 4rem;
-            padding-top: 2.2rem;
-            margin-bottom: 1.9rem;
-        }
-        &__anim {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 0;
-            background-color: $color_tertiary;
-            border-radius: 0 1rem 1rem 0;
-            color: white;
-            transition: all 1.5s;
-            i {
-                transform: rotate(360deg);
-                transition: transform 1s ease-in-out;
-            }
-        }
-        &:hover>&__anim {
-            width: 5em;
-            i {
-                transform: rotate(0deg);
-            }
-        }
-    }
-}
-
-.button_centered {
-    top: 1.75rem;
-}
+                    .header_temp {
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        &__icon {
+                            margin-left: 1.5rem;
+                            margin-top: 1rem;
+                        }
+                        &__logo {
+                            margin-left: 15% !important;
+                            @include medium-screen {
+                                margin-left: 25% !important;
+                            }
+                        }
+                    }
+                    
+                    .main__background {
+                        width: 100%;
+                        height: 15.95rem;
+                        position: relative;
+                        object-fit: cover;
+                        top: 1rem;
+                        z-index: -1;
+                        @include medium-screen {
+                            display: block;
+                            width: 50%;
+                            height: 50%;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+                    
+                    main {
+                        @include large_screen {
+                            padding: 2.5rem;
+                        }
+                    }
+                    
+                    .main_temp {
+                        background-color: $background_color;
+                        border-radius: 1.5rem 1.5rem 0rem 0rem;
+                        display: flex;
+                        width: 100%;
+                        flex-direction: column;
+                        z-index: 1;
+                        padding-bottom: 6rem;
+                        &__title {
+                            font-family: 'Shrikhand', cursive;
+                            display: inline-flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            width: 100%;
+                            i {
+                                margin-top: 0.75rem;
+                            }
+                            @include large_screen {
+                                grid-column: 2/3;
+                                grid-row: 1/2;
+                            }
+                            &__menu_title {
+                                margin-left: 1rem;
+                                justify-content: flex-start;
+                                font-weight: 400;
+                                position: relative;
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    width: 15%;
+                                    top: 1.4rem;
+                                    border-bottom: solid 0.2rem $color_tertiary;
+                                    // margin-bottom: 1.2rem;
+                                }
+                                &__box {
+                                    @include box_template;
+                                    h5 {
+                                        margin: 0.2rem;
+                                        font-weight: bold;
+                                        font-size: 1.01rem;
+                                    }
+                                    &__decript {
+                                        padding-left: 0.5rem;
+                                        margin-top: 0.2rem;
+                                        flex-grow: 1;
+                                        width: 15rem;
+                                        line-height: 1rem;
+                                        overflow: clip;
+                                        justify-content: center;
+                                        white-space: nowrap;
+                                        h5,
+                                        p {
+                                            overflow: clip;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                        }
+                                        p {
+                                            margin-top: 0.9rem;
+                                            ;
+                                        }
+                                    }
+                                    &__price {
+                                        width: 4rem;
+                                        padding-top: 2.2rem;
+                                        margin-bottom: 1.9rem;
+                                    }
+                                    &__anim {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        width: 0;
+                                        background-color: $color_tertiary;
+                                        border-radius: 0 1rem 1rem 0;
+                                        color: white;
+                                        transition: all 1.5s;
+                                        i {
+                                            transform: rotate(360deg);
+                                            transition: transform 1s ease-in-out;
+                                        }
+                                    }
+                                    &:hover>&__anim {
+                                        width: 5em;
+                                        i {
+                                            transform: rotate(0deg);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    .button_centered {
+                        top: 1.75rem;
+                    }
