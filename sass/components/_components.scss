@@ -9,6 +9,8 @@
     color: white;
     border: none;
     z-index: 1;
+    font-weight: bold;
+    font-size: 15px;
     &:hover {
         &::after {
             opacity: 1;

@@ -44,84 +44,92 @@
                         flex-direction: column;
                         z-index: 1;
                         padding-bottom: 6rem;
+                        margin-top: -30px;
                         &__title {
                             font-family: 'Shrikhand', cursive;
                             display: inline-flex;
                             justify-content: space-around;
                             align-items: center;
                             width: 100%;
+                            font-size: 20px;
+                            h2 {
+                                margin-right: 40px;
+                            }
                             i {
                                 margin-top: 0.75rem;
+                                font-size: 22px;
                             }
-                            @include large_screen {
-                                grid-column: 2/3;
-                                grid-row: 1/2;
+                        }
+                        @include large_screen {
+                            grid-column: 2/3;
+                            grid-row: 1/2;
+                        }
+                        &__menu_title {
+                            margin-left: 1rem;
+                            justify-content: flex-start;
+                            font-weight: 400;
+                            position: relative;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                width: 11%;
+                                top: 1.4rem;
+                                border-bottom: solid 0.2rem $color_tertiary;
+                                // margin-bottom: 1.2rem;
                             }
-                            &__menu_title {
-                                margin-left: 1rem;
-                                justify-content: flex-start;
-                                font-weight: 400;
-                                position: relative;
-                                &::before {
-                                    content: "";
-                                    position: absolute;
-                                    width: 15%;
-                                    top: 1.4rem;
-                                    border-bottom: solid 0.2rem $color_tertiary;
-                                    // margin-bottom: 1.2rem;
+                        }
+                        &__box {
+                            @include box_template;
+                            h5 {
+                                margin: 0.2rem;
+                                margin-left: 0px;
+                                font-weight: bold;
+                                font-size: 1.01rem;
+                            }
+                            &__decript {
+                                padding-left: 0.5rem;
+                                margin-top: 0.2rem;
+                                flex-grow: 1;
+                                width: 15rem;
+                                overflow: clip;
+                                justify-content: center;
+                                white-space: nowrap;
+                                h5,
+                                p {
+                                    overflow: clip;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
                                 }
-                                &__box {
-                                    @include box_template;
-                                    h5 {
-                                        margin: 0.2rem;
-                                        font-weight: bold;
-                                        font-size: 1.01rem;
-                                    }
-                                    &__decript {
-                                        padding-left: 0.5rem;
-                                        margin-top: 0.2rem;
-                                        flex-grow: 1;
-                                        width: 15rem;
-                                        line-height: 1rem;
-                                        overflow: clip;
-                                        justify-content: center;
-                                        white-space: nowrap;
-                                        h5,
-                                        p {
-                                            overflow: clip;
-                                            white-space: nowrap;
-                                            text-overflow: ellipsis;
-                                        }
-                                        p {
-                                            margin-top: 0.9rem;
-                                            ;
-                                        }
-                                    }
-                                    &__price {
-                                        width: 4rem;
-                                        padding-top: 2.2rem;
-                                        margin-bottom: 1.9rem;
-                                    }
-                                    &__anim {
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        width: 0;
-                                        background-color: $color_tertiary;
-                                        border-radius: 0 1rem 1rem 0;
-                                        color: white;
-                                        transition: all 1.5s;
-                                        i {
-                                            transform: rotate(360deg);
-                                            transition: transform 1s ease-in-out;
-                                        }
-                                    }
-                                    &:hover>&__anim {
-                                        width: 5em;
-                                        i {
-                                            transform: rotate(0deg);
-                                        }
-                                    }
+                                p {
+                                    margin-top: 0.3rem;
+                                }
+                                h5 {
+                                    margin-top: 10px;
+                                }
+                            }
+                            &__price {
+                                width: 4rem;
+                                padding-top: 2.2rem;
+                                margin-bottom: 1.9rem;
+                            }
+                            &__anim {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 0;
+                                background-color: $color_tertiary;
+                                border-radius: 0 1rem 1rem 0;
+                                color: white;
+                                transition: all 1.5s;
+                                i {
+                                    transform: rotate(360deg);
+                                    transition: transform 1s ease-in-out;
+                                }
+                            }
+                            &:hover>&__anim {
+                                width: 5em;
+                                i {
+                                    transform: rotate(0deg);
                                 }
                             }
                         }

@@ -12,6 +12,8 @@
   color: white;
   border: none;
   z-index: 1;
+  font-weight: bold;
+  font-size: 15px;
 }
 .button_purple:hover::after {
   opacity: 1;
@@ -330,13 +332,14 @@ a {
 }
 
 .main_temp {
-  background-color: #eaeaea;
+  background-color: #f6f6f6;
   border-radius: 1.5rem 1.5rem 0rem 0rem;
   display: flex;
   width: 100%;
   flex-direction: column;
   z-index: 1;
   padding-bottom: 6rem;
+  margin-top: -30px;
 }
 .main_temp__title {
   font-family: "Shrikhand", cursive;
@@ -344,30 +347,35 @@ a {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  font-size: 20px;
+}
+.main_temp__title h2 {
+  margin-right: 40px;
 }
 .main_temp__title i {
   margin-top: 0.75rem;
+  font-size: 22px;
 }
 @media screen and (min-width: 768px) {
-  .main_temp__title {
+  .main_temp {
     grid-column: 2/3;
     grid-row: 1/2;
   }
 }
-.main_temp__title__menu_title {
+.main_temp__menu_title {
   margin-left: 1rem;
   justify-content: flex-start;
   font-weight: 400;
   position: relative;
 }
-.main_temp__title__menu_title::before {
+.main_temp__menu_title::before {
   content: "";
   position: absolute;
-  width: 15%;
+  width: 11%;
   top: 1.4rem;
   border-bottom: solid 0.2rem #99E2D0;
 }
-.main_temp__title__menu_title__box {
+.main_temp__box {
   display: flex;
   background: white;
   border-radius: 1rem;
@@ -378,36 +386,39 @@ a {
   align-content: center;
   box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.27);
 }
-.main_temp__title__menu_title__box h5 {
+.main_temp__box h5 {
   margin: 0.2rem;
+  margin-left: 0px;
   font-weight: bold;
   font-size: 1.01rem;
 }
-.main_temp__title__menu_title__box__decript {
+.main_temp__box__decript {
   padding-left: 0.5rem;
   margin-top: 0.2rem;
   flex-grow: 1;
   width: 15rem;
-  line-height: 1rem;
   overflow: clip;
   justify-content: center;
   white-space: nowrap;
 }
-.main_temp__title__menu_title__box__decript h5,
-.main_temp__title__menu_title__box__decript p {
+.main_temp__box__decript h5,
+.main_temp__box__decript p {
   overflow: clip;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.main_temp__title__menu_title__box__decript p {
-  margin-top: 0.9rem;
+.main_temp__box__decript p {
+  margin-top: 0.3rem;
 }
-.main_temp__title__menu_title__box__price {
+.main_temp__box__decript h5 {
+  margin-top: 10px;
+}
+.main_temp__box__price {
   width: 4rem;
   padding-top: 2.2rem;
   margin-bottom: 1.9rem;
 }
-.main_temp__title__menu_title__box__anim {
+.main_temp__box__anim {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -417,14 +428,14 @@ a {
   color: white;
   transition: all 1.5s;
 }
-.main_temp__title__menu_title__box__anim i {
+.main_temp__box__anim i {
   transform: rotate(360deg);
   transition: transform 1s ease-in-out;
 }
-.main_temp__title__menu_title__box:hover > .main_temp__title__menu_title__box__anim {
+.main_temp__box:hover > .main_temp__box__anim {
   width: 5em;
 }
-.main_temp__title__menu_title__box:hover > .main_temp__title__menu_title__box__anim i {
+.main_temp__box:hover > .main_temp__box__anim i {
   transform: rotate(0deg);
 }
 
@@ -531,7 +542,7 @@ a {
   align-items: center;
   background-color: #f6f6f6;
   border-radius: 1.5rem;
-  width: 100%;
+  width: 90%;
   height: 4.7rem;
   padding-right: 0.5rem;
   border: 0rem;
@@ -555,11 +566,18 @@ a {
   position: absolute;
   right: 97.5%;
 }
-.header__nav__small_bloc i {
-  margin-left: 0.5rem;
-  color: #7e7e7e;
+.header__nav__small_bloc__txt {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
 }
-.header__nav__small_bloc p {
+.header__nav__small_bloc__txt i {
+  margin-right: 1.5rem;
+  color: #7e7e7e;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.header__nav__small_bloc__txt p {
   margin-left: 0.5rem;
   font-weight: bold;
 }
@@ -604,13 +622,15 @@ a {
   left: 0rem;
 }
 .main__liens__new {
-  padding: 0.15rem;
+  padding: 0.4rem 0.6rem;
   background-color: #99E2D0;
   color: #38c4a1;
   position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
+  top: 1rem;
+  right: 1rem;
   z-index: 1;
+  border-radius: 0.15rem;
+  font-weight: bold;
 }
 @media screen and (min-width: 480px) {
   .main__liens {
@@ -660,7 +680,7 @@ a {
 }
 .main__liens__presentation strong {
   font-weight: 600;
-  letter-spacing: 0.08rem;
+  letter-spacing: 0.03rem;
 }
 .main__liens__presentation i {
   font-size: 1.2rem;
