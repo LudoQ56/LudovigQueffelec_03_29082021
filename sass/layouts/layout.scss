@@ -13,13 +13,22 @@ a {
         width: 5.93rem;
         filter: invert(1);
     }
-    ul {
-        list-style: none;
-        padding: 0px;
+    &__link {
+        padding-left: 0px;
+    }
+    &__link ul {
         color: white;
     }
-    li a {
+    &__link li {
+        margin-bottom: 5px;
+        list-style: none;
+        padding-left: 0px;
+    }
+    &__link li a {
         color: white;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 1px;
     }
     li i {
         margin-right: 0.5rem;

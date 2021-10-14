@@ -2,8 +2,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    &__logo {
-        @include logo
+    &__box {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        box-shadow: 0 8px 6px -6px #cfcfcf;
+        z-index: 1;
+        &__logo {
+            @include logo
+        }
     }
     &__search {
         display: flex;
@@ -25,12 +32,20 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        &__intro {
-            text-align: center;
+        justify-content: center;
+        width: 100%;
+        &__box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 70%;
+            &__intro {
+                text-align: center;
+                margin-top: 1.8rem;
+            }
         }
     }
     p {
-        width: 80%;
         text-align: center;
     }
     .button_purple {
@@ -90,7 +105,7 @@
                 color: white;
                 z-index: 1;
                 position: relative;
-                right: 0.55rem;
+                right: 4.5rem;
             }
             i {
                 margin-left: 0.5rem;
@@ -108,11 +123,12 @@
     padding-top: 1.5rem;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;
     background: $background_color_secondary;
     justify-content: center;
     align-items: center;
     @include large_screen {
+        max-width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 5rem 1fr 1fr;
@@ -185,7 +201,8 @@
             margin: 0.5rem;
             font-size: 1.1rem;
             strong {
-                font-weight: 900;
+                font-weight: 600;
+                letter-spacing: 0.08rem;
             }
             i {
                 font-size: 1.2rem;
